@@ -55,7 +55,7 @@ fun Application.configureRouting() {
     routing {
 
         get("/") {
-            call.respondText("API telah berjalan. Dibuat oleh Wahyu Rizky.")
+            call.respondText("API telah berjalan. Dibuat oleh Wesly Wanda.")
         }
 
         // ========================
