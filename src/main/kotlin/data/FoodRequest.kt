@@ -1,6 +1,7 @@
 package org.delcom.data
 
 import kotlinx.datetime.Clock
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import org.delcom.entities.Food
 
@@ -9,12 +10,11 @@ data class FoodRequest(
     var name: String = "",
     var description: String = "",
     var price: Int = 0,
-    var quantity: Int = 0, // Pastikan ini ada!
+    @SerialName("quantity") var quantity: Int = 0,
     var category: String = "",
     var imageUrl: String? = null,
-    var isAvailable: Boolean = true // Pastikan ini ada!
-){
-
+    @SerialName("is_available") var isAvailable: Boolean = true // 🔥 Kunci nama JSON
+) {
     fun toMap(): Map<String, Any?> {
         return mapOf(
             "name" to name,
@@ -23,7 +23,7 @@ data class FoodRequest(
             "quantity" to quantity,
             "category" to category,
             "imageUrl" to imageUrl,
-            "isAvailable" to isAvailable
+            "is_available" to isAvailable // Samakan nama key-nya
         )
     }
 
