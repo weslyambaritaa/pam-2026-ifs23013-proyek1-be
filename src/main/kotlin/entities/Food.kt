@@ -13,6 +13,7 @@ data class Food(
     var name: String,
     var description: String,
     var price: Int,
+    var quantity: Int,
     var category: String, // makanan, minuman, snack
     var isAvailable: Boolean = true,
     var imageUrl: String? = null,

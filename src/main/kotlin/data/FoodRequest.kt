@@ -9,6 +9,7 @@ data class FoodRequest(
     var name: String = "",
     var description: String = "",
     var price: Int = 0,
+    var quantity: Int = 0,
     var category: String = "",
     var imageUrl: String? = null,
     var isAvailable: Boolean = true,
@@ -19,6 +20,7 @@ data class FoodRequest(
             "name" to name,
             "description" to description,
             "price" to price,
+            "quantity" to quantity,
             "category" to category,
             "imageUrl" to imageUrl,
             "isAvailable" to isAvailable
@@ -30,6 +32,7 @@ data class FoodRequest(
             name = name,
             description = description,
             price = price,
+            quantity = quantity,
             category = category,
             imageUrl = imageUrl,
             isAvailable = isAvailable,

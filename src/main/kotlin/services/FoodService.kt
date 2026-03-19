@@ -109,6 +109,7 @@ class FoodService(
         request.name = oldFood.name
         request.description = oldFood.description
         request.price = oldFood.price
+        request.quantity = oldFood.quantity
         request.category = oldFood.category
         request.isAvailable = oldFood.isAvailable
 
@@ -146,6 +147,7 @@ class FoodService(
         validator.required("name", "Nama makanan tidak boleh kosong")
         validator.required("description", "Deskripsi tidak boleh kosong")
         validator.required("price", "Harga tidak boleh kosong")
+        validator.required("quantity", "Kuantitas tidak boleh kosong")
         validator.required("category", "Kategori tidak boleh kosong")
         validator.validate()
 
@@ -174,6 +176,7 @@ class FoodService(
         validator.required("name", "Nama makanan tidak boleh kosong")
         validator.required("description", "Deskripsi tidak boleh kosong")
         validator.required("price", "Harga tidak boleh kosong")
+        validator.required("quantity", "Kuantitas tidak boleh kosong")
         validator.required("category", "Kategori tidak boleh kosong")
         validator.validate()
 

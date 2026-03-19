@@ -49,6 +49,7 @@ class FoodRepository : IFoodRepository {
             name = food.name
             description = food.description
             price = food.price
+            quantity = food.quantity
             category = food.category
             imageUrl = food.imageUrl
             isAvailable = food.isAvailable
@@ -72,6 +73,7 @@ class FoodRepository : IFoodRepository {
             foodDAO.name = newFood.name
             foodDAO.description = newFood.description
             foodDAO.price = newFood.price
+            foodDAO.quantity = newFood.quantity
             foodDAO.category = newFood.category
             foodDAO.imageUrl = newFood.imageUrl
             foodDAO.isAvailable = newFood.isAvailable

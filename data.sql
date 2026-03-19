@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS foods (
     name VARCHAR(100) NOT NULL,
     description TEXT NOT NULL,
     price INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
     category VARCHAR(50) NOT NULL,
     image_url TEXT NULL,
     is_available BOOLEAN NOT NULL DEFAULT TRUE,

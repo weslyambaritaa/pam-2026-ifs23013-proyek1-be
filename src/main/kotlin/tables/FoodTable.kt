@@ -7,6 +7,7 @@ object FoodTable : UUIDTable("foods") {
     val name = varchar("name", 100)
     val description = text("description")
     val price = integer("price")
+    val quantity = integer("quantity")
     val category = varchar("category", 50)
     val imageUrl = text("image_url").nullable()
     val isAvailable = bool("is_available").default(true)

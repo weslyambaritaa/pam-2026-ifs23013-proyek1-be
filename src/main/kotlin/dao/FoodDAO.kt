@@ -13,6 +13,7 @@ class FoodDAO(id: EntityID<UUID>) : Entity<UUID>(id) {
     var name by FoodTable.name
     var description by FoodTable.description
     var price by FoodTable.price
+    var quantity by FoodTable.quantity
     var category by FoodTable.category
     var imageUrl by FoodTable.imageUrl
     var isAvailable by FoodTable.isAvailable

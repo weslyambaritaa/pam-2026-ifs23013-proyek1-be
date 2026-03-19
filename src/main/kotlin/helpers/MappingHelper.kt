@@ -49,6 +49,7 @@ fun foodDAOToModel(dao: FoodDAO) = Food(
     name = dao.name,
     description = dao.description,
     price = dao.price,
+    quantity = dao.quantity,
     category = dao.category,
     imageUrl = dao.imageUrl,
     isAvailable = dao.isAvailable,
