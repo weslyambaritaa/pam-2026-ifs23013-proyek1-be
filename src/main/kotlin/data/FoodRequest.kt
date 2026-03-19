@@ -9,10 +9,10 @@ data class FoodRequest(
     var name: String = "",
     var description: String = "",
     var price: Int = 0,
-    var quantity: Int = 0,
+    var quantity: Int = 0, // Pastikan ini ada!
     var category: String = "",
     var imageUrl: String? = null,
-    var isAvailable: Boolean = true,
+    var isAvailable: Boolean = true // Pastikan ini ada!
 ){
 
     fun toMap(): Map<String, Any?> {
