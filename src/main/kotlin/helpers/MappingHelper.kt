@@ -52,7 +52,7 @@ fun foodDAOToModel(dao: FoodDAO) = Food(
     quantity = dao.quantity,
     category = dao.category,
     imageUrl = dao.imageUrl,
-    isAvailable = dao.isAvailable, // 🔥 TAMBAHKAN BARIS INI
+    available = dao.available, // 🔥 TAMBAHKAN BARIS INI
     createdAt = dao.createdAt,
     updatedAt = dao.updatedAt
 )

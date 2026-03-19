@@ -203,7 +203,7 @@ Content-Type: application/json
   "description": "Nasi goreng spesial dengan telur",
   "price": 15000,
   "category": "Makanan",
-  "isAvailable": true
+  "available": true
 }
 
 > {%
@@ -229,7 +229,7 @@ Content-Type: application/json
   "description": "Nasi goreng dengan ayam dan telur",
   "price": 18000,
   "category": "Makanan",
-  "isAvailable": true
+  "available": true
 }
 
 

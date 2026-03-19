@@ -16,7 +16,7 @@ class FoodDAO(id: EntityID<UUID>) : Entity<UUID>(id) {
     var quantity by FoodTable.quantity
     var category by FoodTable.category
     var imageUrl by FoodTable.imageUrl
-    var isAvailable by FoodTable.isAvailable
+    var available by FoodTable.available
     var createdAt by FoodTable.createdAt
     var updatedAt by FoodTable.updatedAt
 }

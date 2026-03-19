@@ -111,7 +111,7 @@ class FoodService(
         request.price = oldFood.price
         request.quantity = oldFood.quantity
         request.category = oldFood.category
-        request.isAvailable = oldFood.isAvailable
+        request.available = oldFood.available
 
         val isUpdated = foodRepo.update(
             foodId,

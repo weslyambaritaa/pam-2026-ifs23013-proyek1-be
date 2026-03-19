@@ -10,10 +10,13 @@ data class FoodRequest(
     var name: String = "",
     var description: String = "",
     var price: Int = 0,
-    @SerialName("quantity") var quantity: Int = 0,
+    var quantity: Int = 0,
     var category: String = "",
     var imageUrl: String? = null,
-    @SerialName("is_available") var isAvailable: Boolean = true // 🔥 Kunci nama JSON
+
+    // 🔥 SAMAKAN DI SINI
+    @SerialName("is_available")
+    var available: Boolean = true
 ) {
     fun toMap(): Map<String, Any?> {
         return mapOf(
@@ -23,7 +26,7 @@ data class FoodRequest(
             "quantity" to quantity,
             "category" to category,
             "imageUrl" to imageUrl,
-            "is_available" to isAvailable // Samakan nama key-nya
+            "is_available" to available // Samakan nama key-nya
         )
     }
 
@@ -35,7 +38,7 @@ data class FoodRequest(
             quantity = quantity,
             category = category,
             imageUrl = imageUrl,
-            isAvailable = isAvailable,
+            available = available,
             updatedAt = Clock.System.now()
         )
     }

@@ -15,13 +15,12 @@ data class Food(
     var price: Int,
     @SerialName("quantity") var quantity: Int = 0,
     var category: String,
-    @SerialName("isAvailable") // 🔥 Pastikan penamaan sama dengan di Android
-    var isAvailable: Boolean = true,
+
+    // 🔥 UBAH INI: Gunakan underscore untuk nama JSON agar tidak dipotong oleh parser
+    @SerialName("is_available")
+    var available: Boolean = true,
+
     var imageUrl: String? = null,
-
-    @Contextual
-    val createdAt: Instant = Clock.System.now(),
-
-    @Contextual
-    var updatedAt: Instant = Clock.System.now()
+    @Contextual val createdAt: Instant = Clock.System.now(),
+    @Contextual var updatedAt: Instant = Clock.System.now()
 )

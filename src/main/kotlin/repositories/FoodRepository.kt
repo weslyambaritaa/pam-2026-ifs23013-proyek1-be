@@ -52,7 +52,7 @@ class FoodRepository : IFoodRepository {
             quantity = food.quantity
             category = food.category
             imageUrl = food.imageUrl
-            isAvailable = food.isAvailable
+            available = food.available
             createdAt = food.createdAt
             updatedAt = food.updatedAt
         }
@@ -76,7 +76,7 @@ class FoodRepository : IFoodRepository {
             foodDAO.quantity = newFood.quantity
             foodDAO.category = newFood.category
             foodDAO.imageUrl = newFood.imageUrl
-            foodDAO.isAvailable = newFood.isAvailable
+            foodDAO.available = newFood.available
             foodDAO.updatedAt = newFood.updatedAt
             true
         } else {
