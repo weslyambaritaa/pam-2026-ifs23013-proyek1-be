@@ -17,7 +17,7 @@ data class Food(
     var category: String,
 
     // 🔥 UBAH INI: Gunakan underscore untuk nama JSON agar tidak dipotong oleh parser
-    @SerialName("is_available")
+    @SerialName("available")
     var available: Boolean = true,
 
     var imageUrl: String? = null,

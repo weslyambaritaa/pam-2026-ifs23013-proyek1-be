@@ -10,7 +10,7 @@ object FoodTable : UUIDTable("foods") {
     val quantity = integer("quantity")
     val category = varchar("category", 50)
     val imageUrl = text("image_url").nullable()
-    val available = bool("is_available").default(true)
+    val available = bool("available").default(true)
     val createdAt = timestamp("created_at")
     val updatedAt = timestamp("updated_at")
 }

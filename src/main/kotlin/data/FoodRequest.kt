@@ -15,7 +15,7 @@ data class FoodRequest(
     var imageUrl: String? = null,
 
     // 🔥 SAMAKAN DI SINI
-    @SerialName("is_available")
+    @SerialName("available")
     var available: Boolean = true
 ) {
     fun toMap(): Map<String, Any?> {
@@ -26,7 +26,7 @@ data class FoodRequest(
             "quantity" to quantity,
             "category" to category,
             "imageUrl" to imageUrl,
-            "is_available" to available // Samakan nama key-nya
+            "available" to available // Samakan nama key-nya
         )
     }
 

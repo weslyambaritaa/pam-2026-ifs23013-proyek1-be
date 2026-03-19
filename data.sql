@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS foods (
     quantity INTEGER NOT NULL,
     category VARCHAR(50) NOT NULL,
     image_url TEXT NULL,
-    is_available BOOLEAN NOT NULL DEFAULT TRUE,
+    available BOOLEAN NOT NULL DEFAULT TRUE,
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL
 );
