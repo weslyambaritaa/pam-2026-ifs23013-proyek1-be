@@ -1,0 +1,39 @@
+package org.delcom.data
+
+import kotlinx.datetime.Clock
+import kotlinx.serialization.Serializable
+import org.delcom.entities.Food
+
+@Serializable
+data class FoodRequest(
+    var name: String = "",
+    var description: String = "",
+    var price: Int = 0,
+    var category: String = "",
+    var imageUrl: String? = null,
+    var isAvailable: Boolean = true,
+){
+
+    fun toMap(): Map<String, Any?> {
+        return mapOf(
+            "name" to name,
+            "description" to description,
+            "price" to price,
+            "category" to category,
+            "imageUrl" to imageUrl,
+            "isAvailable" to isAvailable
+        )
+    }
+
+    fun toEntity(): Food {
+        return Food(
+            name = name,
+            description = description,
+            price = price,
+            category = category,
+            imageUrl = imageUrl,
+            isAvailable = isAvailable,
+            updatedAt = Clock.System.now()
+        )
+    }
+}
