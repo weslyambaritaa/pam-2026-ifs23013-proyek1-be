@@ -15,7 +15,8 @@ data class Food(
     var price: Int,
     @SerialName("quantity") var quantity: Int = 0,
     var category: String,
-    @SerialName("is_available") var isAvailable: Boolean = true, // 🔥 Kunci nama JSON
+    @SerialName("isAvailable") // 🔥 Pastikan penamaan sama dengan di Android
+    var isAvailable: Boolean = true,
     var imageUrl: String? = null,
 
     @Contextual
