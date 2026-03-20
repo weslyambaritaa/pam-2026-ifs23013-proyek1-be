@@ -13,8 +13,6 @@ data class FoodRequest(
     var quantity: Int = 0,
     var category: String = "",
     var imageUrl: String? = null,
-
-    // 🔥 SAMAKAN DI SINI
     @SerialName("available")
     var available: Boolean = true
 ) {
