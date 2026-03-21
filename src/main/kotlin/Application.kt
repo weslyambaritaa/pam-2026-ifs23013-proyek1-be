@@ -79,6 +79,7 @@ fun Application.module() {
                 explicitNulls = false
                 prettyPrint = true
                 ignoreUnknownKeys = true
+                encodeDefaults = true
             }
         )
     }
